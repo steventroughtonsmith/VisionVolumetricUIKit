@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B09BCE872A4F2DAC00D29D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09BCE862A4F2DAC00D29D89 /* Assets.xcassets */; };
+		B09BCE8B2A4F2DAC00D29D89 /* VVUAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BCE8A2A4F2DAC00D29D89 /* VVUAppDelegate.swift */; };
+		B09BCE8D2A4F2DAC00D29D89 /* VVUSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BCE8C2A4F2DAC00D29D89 /* VVUSceneDelegate.swift */; };
+		B09BCE922A4F2DAC00D29D89 /* VVUMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BCE912A4F2DAC00D29D89 /* VVUMainViewController.swift */; };
+		B09BCE952A4F2DAC00D29D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09BCE932A4F2DAC00D29D89 /* LaunchScreen.storyboard */; };
+		B09BCE9D2A4F2DF600D29D89 /* VVUVolumetricSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BCE9C2A4F2DF600D29D89 /* VVUVolumetricSceneDelegate.swift */; };
+		B09BCEA22A4FB43800D29D89 /* VVUVolumetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BCEA12A4FB43800D29D89 /* VVUVolumetricView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B09BCE832A4F2DAC00D29D89 /* VisionVolumetricUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionVolumetricUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09BCE862A4F2DAC00D29D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B09BCE8A2A4F2DAC00D29D89 /* VVUAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVUAppDelegate.swift; sourceTree = "<group>"; };
+		B09BCE8C2A4F2DAC00D29D89 /* VVUSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVUSceneDelegate.swift; sourceTree = "<group>"; };
+		B09BCE912A4F2DAC00D29D89 /* VVUMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVUMainViewController.swift; sourceTree = "<group>"; };
+		B09BCE942A4F2DAC00D29D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B09BCE962A4F2DAC00D29D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B09BCE9C2A4F2DF600D29D89 /* VVUVolumetricSceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVUVolumetricSceneDelegate.swift; sourceTree = "<group>"; };
+		B09BCEA12A4FB43800D29D89 /* VVUVolumetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVUVolumetricView.swift; sourceTree = "<group>"; };
+		B09BCEA32A4FB84C00D29D89 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B09BCE802A4F2DAC00D29D89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B09BCE7A2A4F2DAC00D29D89 = {
+			isa = PBXGroup;
+			children = (
+				B09BCEA32A4FB84C00D29D89 /* README.md */,
+				B09BCE852A4F2DAC00D29D89 /* VisionVolumetricUIKit */,
+				B09BCE842A4F2DAC00D29D89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B09BCE842A4F2DAC00D29D89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCE832A4F2DAC00D29D89 /* VisionVolumetricUIKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B09BCE852A4F2DAC00D29D89 /* VisionVolumetricUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCE862A4F2DAC00D29D89 /* Assets.xcassets */,
+				B09BCE932A4F2DAC00D29D89 /* LaunchScreen.storyboard */,
+				B09BCE962A4F2DAC00D29D89 /* Info.plist */,
+				B09BCE882A4F2DAC00D29D89 /* Source */,
+			);
+			path = VisionVolumetricUIKit;
+			sourceTree = "<group>";
+		};
+		B09BCE882A4F2DAC00D29D89 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCE892A4F2DAC00D29D89 /* Application */,
+				B09BCEA02A4FB41D00D29D89 /* Volume */,
+				B09BCE902A4F2DAC00D29D89 /* Main */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B09BCE892A4F2DAC00D29D89 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCE8A2A4F2DAC00D29D89 /* VVUAppDelegate.swift */,
+				B09BCE8C2A4F2DAC00D29D89 /* VVUSceneDelegate.swift */,
+				B09BCE9C2A4F2DF600D29D89 /* VVUVolumetricSceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B09BCE902A4F2DAC00D29D89 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCE912A4F2DAC00D29D89 /* VVUMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B09BCEA02A4FB41D00D29D89 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCEA12A4FB43800D29D89 /* VVUVolumetricView.swift */,
+			);
+			path = Volume;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B09BCE822A4F2DAC00D29D89 /* VisionVolumetricUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09BCE992A4F2DAC00D29D89 /* Build configuration list for PBXNativeTarget "VisionVolumetricUIKit" */;
+			buildPhases = (
+				B09BCE7F2A4F2DAC00D29D89 /* Sources */,
+				B09BCE802A4F2DAC00D29D89 /* Frameworks */,
+				B09BCE812A4F2DAC00D29D89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisionVolumetricUIKit;
+			productName = RadarWindowActivation;
+			productReference = B09BCE832A4F2DAC00D29D89 /* VisionVolumetricUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B09BCE7B2A4F2DAC00D29D89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = VVU;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B09BCE822A4F2DAC00D29D89 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B09BCE7E2A4F2DAC00D29D89 /* Build configuration list for PBXProject "VisionVolumetricUIKit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B09BCE7A2A4F2DAC00D29D89;
+			productRefGroup = B09BCE842A4F2DAC00D29D89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B09BCE822A4F2DAC00D29D89 /* VisionVolumetricUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B09BCE812A4F2DAC00D29D89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09BCE872A4F2DAC00D29D89 /* Assets.xcassets in Resources */,
+				B09BCE952A4F2DAC00D29D89 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B09BCE7F2A4F2DAC00D29D89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09BCE922A4F2DAC00D29D89 /* VVUMainViewController.swift in Sources */,
+				B09BCEA22A4FB43800D29D89 /* VVUVolumetricView.swift in Sources */,
+				B09BCE9D2A4F2DF600D29D89 /* VVUVolumetricSceneDelegate.swift in Sources */,
+				B09BCE8D2A4F2DAC00D29D89 /* VVUSceneDelegate.swift in Sources */,
+				B09BCE8B2A4F2DAC00D29D89 /* VVUAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B09BCE932A4F2DAC00D29D89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B09BCE942A4F2DAC00D29D89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B09BCE972A4F2DAC00D29D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B09BCE982A4F2DAC00D29D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B09BCE9A2A4F2DAC00D29D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				GCC_TREAT_WARNINGS_AS_ERRORS = deep;
+				GCC_WARN_PEDANTIC = deep;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.VisionVolumetricUIKit;
+				PRODUCT_NAME = VisionVolumetricUIKit;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6,7";
+			};
+			name = Debug;
+		};
+		B09BCE9B2A4F2DAC00D29D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				GCC_TREAT_WARNINGS_AS_ERRORS = deep;
+				GCC_WARN_PEDANTIC = deep;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.VisionVolumetricUIKit;
+				PRODUCT_NAME = VisionVolumetricUIKit;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6,7";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B09BCE7E2A4F2DAC00D29D89 /* Build configuration list for PBXProject "VisionVolumetricUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09BCE972A4F2DAC00D29D89 /* Debug */,
+				B09BCE982A4F2DAC00D29D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09BCE992A4F2DAC00D29D89 /* Build configuration list for PBXNativeTarget "VisionVolumetricUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09BCE9A2A4F2DAC00D29D89 /* Debug */,
+				B09BCE9B2A4F2DAC00D29D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B09BCE7B2A4F2DAC00D29D89 /* Project object */;
+}
