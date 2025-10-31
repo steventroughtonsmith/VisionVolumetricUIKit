@@ -39,7 +39,8 @@ final class VVUMainViewController: UIViewController {
 	
 	@objc func showChildWindow(_ sender:Any?) {
 		
-		let request = UISceneSessionActivationRequest(role:.windowApplicationVolumetric, userActivity: NSUserActivity(activityType: "com.example.child"))
+		var request = UISceneSessionActivationRequest(hostingDelegateClass: VVUVolumetricSceneDelegate.self, id:"sphere")!
+		request.userActivity = NSUserActivity(activityType: "com.example.child")
 
 		UIApplication.shared.activateSceneSession(for: request)
 	}

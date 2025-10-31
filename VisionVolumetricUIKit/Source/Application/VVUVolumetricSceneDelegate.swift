@@ -9,23 +9,17 @@
 import UIKit
 import SwiftUI
 
-class VVUVolumetricSceneDelegate: UIResponder, UIWindowSceneDelegate {
-	var window: UIWindow?
+class VVUVolumetricSceneDelegate: UIResponder, UIHostingSceneDelegate {
 	
-	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-		guard let windowScene = scene as? UIWindowScene else {
-			fatalError("Expected scene of type UIWindowScene but got an unexpected type")
+	static var rootScene: some Scene {
+		WindowGroup(id: "sphere") {
+			VVUVolumetricView()
 		}
-		window = UIWindow(windowScene: windowScene)
-		
-		let size = CGSize(width: 640, height: 640)
-		windowScene.sizeRestrictions?.minimumSize = size
-		windowScene.sizeRestrictions?.maximumSize = size
-
-		if let window = window {
-			window.rootViewController = UIHostingController(rootView: VVUVolumetricView())
-	
-			window.makeKeyAndVisible()
-		}
+		.windowStyle(.volumetric)
+		.defaultSize(
+			width: 1,
+			height: 1,
+			depth: 1,
+			in: .meters)
 	}
 }
